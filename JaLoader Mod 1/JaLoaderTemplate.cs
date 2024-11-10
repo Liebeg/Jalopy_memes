@@ -96,7 +96,8 @@ namespace JaLoader_Mod_1
             base.SettingsDeclaration();
             InstantiateSettings();
             AddHeader("Choose your Lanfuage prefered.");
-            AddToggle("atoggle","My first toggle", true);
+            AddHeader("On = English OFF = German");
+            AddToggle("atoggle","Jokes in Ennglish", true);
         }
 
         /// <summary>
@@ -136,8 +137,6 @@ namespace JaLoader_Mod_1
             JaLoader.Console.Instance.AddCommand("meme", "Prints a random meme", nameof(Sendmeme),this);
 
 
-            string Meme1 = ("memehaha");
-            JaLoader.Console.Log(Meme1);
         }
 
         /// <summary>
@@ -146,11 +145,6 @@ namespace JaLoader_Mod_1
         public override void Update()
         {
             base.Update();
-
-            if (GetToggleValue("atoggle") == true)
-            {
-                JaLoader.Console.Log("Toggle turned on");
-            }
         }
         public void Sendmeme()
         {
@@ -161,13 +155,46 @@ namespace JaLoader_Mod_1
             //int rand1 = rng.Next(100); // number between 0 and 99
 
             //JaLoader.Console.Log("Sendmeme should be triggered here" + rand1);
-            string filePath = "de_jokes.txt";
-
+            string defilePath = "de_jokes.txt";
+            string enfilePath = "en_jokes.txt";
             // Check if the file exists
-            if (File.Exists(filePath))
+
+            if (GetToggleValue("atoggle") == true)
+            {
+                if (File.Exists(enfilePath))
+                {
+                    // Read all lines from the file
+                    string[] enjokes = File.ReadAllLines(enfilePath);
+
+                    // Check if the file is not empty
+                    if (enjokes.Length > 0)
+                    {
+                        // Create a random number generator
+                        System.Random random = new System.Random();
+
+                        // Get a random index
+                        int randomIndex = random.Next(enjokes.Length);
+
+                        // Print the random joke
+                        JaLoader.Console.Log(enjokes[randomIndex]);
+                    }
+                    else
+                    {
+                        JaLoader.Console.Log("The file is empty.");
+                    }
+                }
+                else
+                {
+                    JaLoader.Console.Log($"File not found: {enfilePath}");
+                }
+            }
+
+            if (GetToggleValue("atoggle") == false)
+            {
+                if (File.Exists(defilePath))
             {
                 // Read all lines from the file
-                string[] jokes = File.ReadAllLines(filePath);
+                string[] jokes = File.ReadAllLines(defilePath);
 
                 // Check if the file is not empty
                 if (jokes.Length > 0)
@@ -188,8 +215,9 @@ namespace JaLoader_Mod_1
             }
             else
             {
-                JaLoader.Console.Log($"File not found: {filePath}");
+                JaLoader.Console.Log($"File not found: {defilePath}");
             }
+        }
         }
         /// <summary>
         /// This is the default Unity OnDisable() function, called when the mod is disabled.
