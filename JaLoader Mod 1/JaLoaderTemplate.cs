@@ -23,7 +23,7 @@ namespace JaLoader_Mod_1
         /// <summary>
         /// The mod's name. This is shown in the mods list. Does not need to be unique.
         /// </summary>
-        public override string ModName => "Liebegs Test mod1";
+        public override string ModName => "Jalopy Memes";
 
         /// <summary>
         /// The mod's author (you). Also shown in the mods list.
@@ -33,21 +33,21 @@ namespace JaLoader_Mod_1
         /// <summary>
         /// The mod's description. This is also shown in the mods list, upon clicking on "More Info".
         /// </summary>
-        public override string ModDescription => "Liebeg test mod 1";
+        public override string ModDescription => "Read jokes in Jalopy";
 
         /// <summary>
         /// The mod's version. Also shown in the mods list. 
         /// If your mod is open-source on GitHub, make sure that you're using the same format as your release tags (for example, 1.0.0)
         /// For more information, check out the wiki page on versioning. (https://github.com/theLeaxx/JaLoader/wiki/Versioning-your-mod)
         /// </summary>
-        public override string ModVersion => "1.0.0";
+        public override string ModVersion => "1.0.1";
 
         /// <summary>
         /// If your mod is open-source on GitHub, you can link it here to allow for automatic update-checking in-game.
         /// It compares the current ModVersion with the tag of the latest release (ex. 1.0.0 compared with 1.0.1)
         /// For more information, check out the wiki page on versioning. (https://github.com/theLeaxx/JaLoader/wiki/Versioning-your-mod)
         /// </summary>
-        public override string GitHubLink => "";
+        public override string GitHubLink => "https://github.com/Liebeg/Jalopy_memes";
 
         /// <summary>
         /// When to initialize the mod.
@@ -97,7 +97,7 @@ namespace JaLoader_Mod_1
             InstantiateSettings();
             AddHeader("Choose your Lanfuage prefered.");
             AddHeader("On = English OFF = German");
-            AddToggle("atoggle","Jokes in Ennglish", true);
+            AddToggle("atoggle","Jokes in English", true);
         }
 
         /// <summary>
