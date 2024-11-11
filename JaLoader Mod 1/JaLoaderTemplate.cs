@@ -148,15 +148,8 @@ namespace JaLoader_Mod_1
         }
         public void Sendmeme()
         {
-            //List<String> memelist = new List<String>();
-            //memelist.Add("");
-            //System.Random rng = new System.Random();
-
-            //int rand1 = rng.Next(100); // number between 0 and 99
-
-            //JaLoader.Console.Log("Sendmeme should be triggered here" + rand1);
-            string defilePath = "de_jokes.txt";
-            string enfilePath = "en_jokes.txt";
+            string defilePath = Path.Combine(AssetsPath, @"\de_jokes.txt");
+            string enfilePath = Path.Combine(AssetsPath, @"\en_jokes.txt");
             // Check if the file exists
 
             if (GetToggleValue("atoggle") == true)
