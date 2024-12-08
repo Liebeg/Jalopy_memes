@@ -18,7 +18,7 @@ namespace JaLoader_Mod_1
         /// <summary>
         /// The mod's ID. Try making it as unique as possible, to avoid conflicting IDs.
         /// </summary>
-        public override string ModID => "LiebegMod1";
+        public override string ModID => "JaJokes";
 
         /// <summary>
         /// The mod's name. This is shown in the mods list. Does not need to be unique.
@@ -73,7 +73,7 @@ namespace JaLoader_Mod_1
         /// In other words, if your mod uses the "LoadAsset>T>" function, you need to set this to true.
         /// For more information, check out the wiki page on custom assets. (https://github.com/theLeaxx/JaLoader/wiki/Using-custom-assets)
         /// </summary>
-        public override bool UseAssets => false;
+        public override bool UseAssets => true;
 
         /// <summary>
         /// Declare all of your events here.
@@ -148,8 +148,11 @@ namespace JaLoader_Mod_1
         }
         public void Sendmeme()
         {
-            string defilePath = Path.Combine(AssetsPath, @"\de_jokes.txt");
-            string enfilePath = Path.Combine(AssetsPath, @"\en_jokes.txt");
+            //string defilePath = Path.Combine(AssetsPath, @"\de_jokes.txt");
+            // string enfilePath = Path.Combine(AssetsPath, @"\en_jokes.txt");
+            string enfilePath = $@"{AssetsPath}\en_jokes.txt";
+            string defilePath = $@"{AssetsPath}\de_jokes.txt";
+
             // Check if the file exists
 
             if (GetToggleValue("atoggle") == true)

@@ -6,3 +6,11 @@ C:\Users\Leo\source\repos\JaLoader Mod 1\JaLoader Mod 1\obj\Debug\JaLoader Mod 1
 C:\Users\Leo\source\repos\JaLoader Mod 1\JaLoader Mod 1\obj\Debug\JaLoader.2367E6D0.Up2Date
 C:\Users\Leo\source\repos\JaLoader Mod 1\JaLoader Mod 1\obj\Debug\JaLoader Mod 1.dll
 C:\Users\Leo\source\repos\JaLoader Mod 1\JaLoader Mod 1\obj\Debug\JaLoader Mod 1.pdb
+C:\Users\Leo\Jalopy_memes\JaLoader Mod 1\bin\Debug\JaLoader Mod 1.dll
+C:\Users\Leo\Jalopy_memes\JaLoader Mod 1\bin\Debug\JaLoader Mod 1.pdb
+C:\Users\Leo\Jalopy_memes\JaLoader Mod 1\bin\Debug\MonoMod.Backports.dll
+C:\Users\Leo\Jalopy_memes\JaLoader Mod 1\obj\Debug\JaLoader Mod 1.csproj.AssemblyReference.cache
+C:\Users\Leo\Jalopy_memes\JaLoader Mod 1\obj\Debug\JaLoader Mod 1.csproj.CoreCompileInputs.cache
+C:\Users\Leo\Jalopy_memes\JaLoader Mod 1\obj\Debug\JaLoader.2367E6D0.Up2Date
+C:\Users\Leo\Jalopy_memes\JaLoader Mod 1\obj\Debug\JaLoader Mod 1.dll
+C:\Users\Leo\Jalopy_memes\JaLoader Mod 1\obj\Debug\JaLoader Mod 1.pdb
